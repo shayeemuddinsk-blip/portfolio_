@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101e2d">
+<title>Sk Shayeemuddin — Digital Skills & Project Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root{--ink:#142536;--navy:#101e2d;--blue:#315f91;--blue2:#eaf1f8;--paper:#f5f7f9;--white:#fff;--muted:#718091;--line:#e3e8ed;--green:#187653;--gold:#b28a50;--shadow:0 16px 44px rgba(18,35,52,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Hind Siliguri",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.bn{font-family:"Hind Siliguri",sans-serif}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}
+.topbar{height:76px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(14px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font:800 17px Manrope,sans-serif;letter-spacing:-.6px}.brand em{font-style:normal;color:var(--blue)}.navlinks{display:flex;gap:26px;align-items:center}.navlinks a{font-size:11px;font-weight:700;color:#586a7d}.navlinks a:hover{color:var(--blue)}.nav-cta{background:var(--navy);color:white!important;padding:11px 16px;border-radius:5px}.menu{display:none;border:0;background:none;font-size:25px;color:var(--ink)}
+.hero{background:#fff;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}.hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid #e9eef3;border-radius:50%;right:-190px;top:-260px;box-shadow:0 0 0 55px #f8fafc,0 0 0 110px #fbfcfd;pointer-events:none}.hero-inner{position:relative;z-index:1;padding:94px 0 82px;display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}.kicker{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--blue);text-transform:uppercase}.hero h1{font:800 clamp(42px,6vw,72px)/1.06 Manrope,sans-serif;letter-spacing:-3px;margin:20px 0 18px;color:var(--navy)}.hero h1 span{color:var(--blue)}.hero-copy{font-size:15px;line-height:1.95;color:#657487;max-width:650px}.hero-copy .bn{display:block;margin-top:9px;font-size:14px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:29px}.btn{border:1px solid var(--line);padding:12px 18px;border-radius:5px;font-size:11px;font-weight:800;display:inline-flex;align-items:center;gap:9px;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);color:white;border-color:var(--blue)}.secondary{background:#fff;color:var(--ink)}.hero-note{margin-top:22px;color:#8793a0;font-size:10px;letter-spacing:.3px}.identity{background:var(--navy);color:#fff;padding:30px;border-radius:8px;box-shadow:var(--shadow);position:relative}.identity:before{content:"";position:absolute;left:0;top:30px;bottom:30px;width:3px;background:var(--gold)}.monogram{width:58px;height:58px;border:1px solid #526274;display:grid;place-items:center;font:800 20px Manrope;margin-bottom:20px}.identity h2{font:700 21px Manrope;margin:0 0 4px}.identity .role{font-size:11px;color:#b6c2ce}.identity hr{border:0;border-top:1px solid #344456;margin:22px 0}.id-row{display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:6px 0}.id-row span{color:#a8b5c2}.id-row b{text-align:right;font-weight:600}
+section{padding:78px 0}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:30px}.section-index{font-size:10px;letter-spacing:1.8px;font-weight:800;color:var(--blue)}h2.section-title{font:800 clamp(27px,3.5vw,38px)/1.2 Manrope,sans-serif;letter-spacing:-1.2px;margin:9px 0 0}.section-intro{max-width:430px;color:var(--muted);font-size:12px;line-height:1.9;margin:0}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px}.about-copy{font-size:14px;line-height:2.05;color:#667587}.about-copy p{margin:0 0 13px}.about-panel{background:white;border:1px solid var(--line);padding:25px;border-radius:7px}.about-panel h3{font:700 15px Manrope;margin:0 0 15px}.about-panel ul{padding:0;margin:0;list-style:none}.about-panel li{border-top:1px solid var(--line);padding:9px 0;font-size:12px;color:#5e6e7f}.about-panel li:before{content:"—";color:var(--gold);font-weight:800;margin-right:10px}
+.skills{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.skill{padding:22px;border:1px solid var(--line);border-radius:6px;background:#fff;min-height:174px;transition:.2s}.skill:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.skill .num{font-size:10px;color:var(--gold);font-weight:800;letter-spacing:1px}.skill h3{font:700 15px Manrope;margin:16px 0 8px}.skill p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}
+.capabilities{background:#eef2f6}.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cap{display:grid;grid-template-columns:42px 1fr;gap:15px;padding:20px;background:white;border:1px solid #e4e9ee;border-radius:6px}.cap-no{width:38px;height:38px;display:grid;place-items:center;background:var(--blue2);color:var(--blue);font:800 11px Manrope}.cap h3{font:700 14px Manrope;margin:0 0 6px}.cap p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}.cap strong{display:block;color:#385c7f;font-size:10px;margin-top:7px}
+.excel-section{background:#fff}.excel-shell{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}.excel-top{background:var(--navy);color:#fff;padding:19px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px}.excel-top strong{font:700 14px Manrope}.excel-top span{font-size:10px;color:#bac7d3}.excel-tabs{display:flex;gap:0;overflow-x:auto;border-bottom:1px solid var(--line);background:#f7f9fb}.excel-tab{white-space:nowrap;border:0;border-right:1px solid var(--line);background:transparent;padding:13px 16px;font-size:10px;font-weight:800;color:#69798a}.excel-tab.active{background:#fff;color:var(--blue);box-shadow:inset 0 -2px var(--blue)}.dash{padding:22px;display:none}.dash.active{display:block}.dash-head{display:flex;justify-content:space-between;gap:15px;align-items:start;margin-bottom:18px}.dash-head h3{font:700 18px Manrope;margin:0 0 4px}.dash-head p{font-size:11px;color:var(--muted);margin:0}.demo-tag{font-size:9px;letter-spacing:1px;color:var(--green);font-weight:800;background:#eaf5ef;padding:7px 9px;border-radius:3px}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:17px}.metric{padding:15px;background:#f4f7fa;border:1px solid #e9edf1;border-radius:5px}.metric small{display:block;font-size:9px;color:#788797;font-weight:800;letter-spacing:.5px}.metric b{display:block;font:800 22px Manrope;margin-top:7px;color:var(--navy)}.metric em{display:block;font-style:normal;font-size:9px;color:var(--green);margin-top:3px}.data-table{width:100%;border-collapse:collapse;font-size:10px}.data-table th{text-align:left;background:#edf2f6;color:#506174;padding:11px 10px;font-weight:800}.data-table td{padding:11px 10px;border-bottom:1px solid #edf0f3;color:#536477}.data-table tr:last-child td{border-bottom:0}.status{font-weight:800;color:var(--green)}.status.warn{color:#b87931}.dash-foot{font-size:10px;color:#8793a0;margin-top:14px;line-height:1.7}.bar-area{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.bar-card{padding:15px;border:1px solid var(--line);border-radius:5px}.bar-card h4{font:700 11px Manrope;margin:0 0 13px}.bar-row{display:grid;grid-template-columns:80px 1fr 34px;gap:8px;align-items:center;margin:10px 0;font-size:9px;color:#69798a}.bar{height:7px;background:#edf1f5;border-radius:10px;overflow:hidden}.bar i{display:block;height:100%;background:#547da6;border-radius:10px}.bar-row b{font-size:9px;text-align:right}
+.web-projects{background:#f3f6f8}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.project{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:.2s}.project:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.project-visual{height:130px;padding:17px;background:#eaf0f6;display:flex;flex-direction:column;justify-content:space-between}.project:nth-child(2n) .project-visual{background:#eaf2ee}.project:nth-child(3n) .project-visual{background:#f1edf5}.visual-top{font-size:9px;font-weight:800;letter-spacing:1px;color:#60758b}.visual-title{font:800 21px Manrope;color:#213c58;letter-spacing:-.8px}.project-body{padding:18px}.project-meta{font-size:9px;color:var(--blue);font-weight:800;letter-spacing:1px}.project h3{font:700 14px Manrope;margin:8px 0 6px}.project p{font-size:11px;line-height:1.8;color:var(--muted);min-height:57px;margin:0 0 13px}.project button{border:1px solid #d9e2eb;background:#fff;color:var(--blue);border-radius:4px;padding:9px 12px;font-size:10px;font-weight:800}.project button:hover{background:var(--blue);color:#fff}
+.ai-note{background:#fff;border:1px solid var(--line);padding:24px;border-radius:6px;margin-top:17px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.ai-note h3{font:700 14px Manrope;margin:0 0 8px}.ai-note p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}.address{background:#fff}.address-card{border:1px solid var(--line);padding:25px;border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:25px}.address-card h3{font:700 14px Manrope;margin:0 0 7px}.address-card p{font-size:12px;color:var(--muted);line-height:1.8;margin:0}.address-pin{font:800 28px Manrope;color:#d9e2eb;letter-spacing:-2px}
+.contact{background:var(--navy);color:#fff;padding:82px 0}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.contact .section-index{color:#c4a06b}.contact h2{font:800 clamp(30px,4.5vw,48px)/1.16 Manrope;letter-spacing:-1.5px;margin:13px 0}.contact-copy{font-size:13px;color:#b8c5d1;line-height:1.95;max-width:500px}.contact-copy .bn{display:block;margin-top:8px}.contact-small{font-size:10px;color:#8798a9;margin-top:18px}.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.contact-link{min-height:64px;border:1px solid #405267;border-radius:5px;display:flex;align-items:center;gap:12px;padding:12px 15px;transition:.2s}.contact-link:hover{background:#1c3045;border-color:#73879b;transform:translateY(-2px)}.contact-link svg{width:23px;height:23px;flex:none}.contact-link strong{display:block;font-size:11px}.contact-link small{display:block;font-size:9px;color:#a6b5c3;margin-top:3px}
+footer{background:#0b1723;color:#91a0af;padding:20px 0;font-size:10px}.footer-row{display:flex;justify-content:space-between;gap:15px}
+.modal{position:fixed;inset:0;background:rgba(7,17,28,.72);z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-box{width:min(760px,100%);max-height:88vh;overflow:auto;background:#fff;border-radius:7px;box-shadow:0 20px 70px #0004}.modal-head{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:17px 20px;display:flex;justify-content:space-between;align-items:center}.modal-head h3{font:700 15px Manrope;margin:0}.modal-close{border:0;background:#eef2f6;border-radius:4px;width:32px;height:32px;font-size:19px}.modal-content{padding:23px}.modal-content p{font-size:12px;line-height:1.9;color:var(--muted)}.module-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}.module{padding:14px;background:#f3f6f9;border:1px solid var(--line);border-radius:4px;font-size:11px;font-weight:700}.modal-note{font-size:10px;color:#8b97a4;margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr .8fr;gap:25px}.skill-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:repeat(2,1fr)}.metric-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:calc(100% - 30px)}.topbar{height:65px}.menu{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:17px}.navlinks.open{display:flex}.hero-inner{grid-template-columns:1fr;padding:65px 0 55px}.hero:after{right:-410px}.hero h1{letter-spacing:-2px}.identity{max-width:460px}.section-head{display:block}.section-intro{margin-top:12px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:25px}.cap-grid,.ai-note{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr 1fr}.project p{min-height:85px}.excel-tabs{scrollbar-width:thin}.dash{padding:14px}.dash-head{align-items:flex-start}.metric-grid{gap:7px}.metric{padding:11px}.metric b{font-size:19px}.bar-area{grid-template-columns:1fr}.address-card{align-items:flex-start}.address-pin{display:none}.contact-actions{grid-template-columns:1fr 1fr}.footer-row{flex-direction:column}}
+@media(max-width:390px){.project-grid{grid-template-columns:1fr}.project p{min-height:0}.skill-grid{grid-template-columns:1fr}.contact-link{padding:10px}.contact-link strong{font-size:10px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <a class="brand" href="#home">SK <em>SHAYEEMUDDIN</em></a>
+  <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+  <nav class="navlinks" id="nav">
+   <a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#capabilities">WHAT I DO</a><a href="#excel">EXCEL WORK</a><a href="#projects">PROJECTS</a><a class="nav-cta" href="#contact">LET'S TALK</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-inner">
+  <div>
+   <div class="kicker">ADVANCED EXCEL · DIGITAL WORKFLOW · AI TOOLS</div>
+   <h1>SK<br>SHAYEEMUDDIN<span>.</span></h1>
+   <div class="hero-copy">
+    Practical digital skills, structured data work and AI-assisted creation.
+    <span class="bn">Excel, office applications এবং বিভিন্ন AI tools ব্যবহার করে বাস্তব কাজের সমাধান তৈরি করি। Coding knowledge না থাকলেও AI-এর সাহায্যে website planning, creation, preview, testing এবং improvement-এর কাজ করতে পারি।</span>
+   </div>
+   <div class="hero-actions"><a class="btn primary" href="#projects">EXPLORE MY WORK ↗</a><a class="btn secondary" href="#contact">GET IN TOUCH</a></div>
+   <div class="hero-note">PROJECT-BASED PRACTICE · AI-ASSISTED WORKFLOW · CONTINUOUS LEARNING</div>
+  </div>
+  <aside class="identity">
+   <div class="monogram">SK</div><h2>Sk Shayeemuddin</h2><div class="role">Advanced Excel Professional</div>
+   <hr>
+   <div class="id-row"><span>Primary focus</span><b>Excel & Data Work</b></div>
+   <div class="id-row"><span>Digital workflow</span><b>AI-assisted creation</b></div>
+   <div class="id-row"><span>Web projects</span><b>HTML · CSS · JavaScript</b></div>
+   <div class="id-row"><span>Based in</span><b>Dankuni, Hooghly</b></div>
+  </aside>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <div class="section-head"><div><div class="section-index">01 / INTRODUCTION</div><h2 class="section-title">About My Work</h2></div><p class="section-intro bn">আমার শেখা, কাজের ধরন এবং যে digital skills-গুলো practicalভাবে কাজে লাগাই।</p></div>
+  <div class="about-grid">
+   <div class="about-copy bn">
+    <p>আমি Sk Shayeemuddin। Advanced Excel, computer applications, data management এবং Artificial Intelligence ব্যবহার করে digital কাজের বিভিন্ন workflow তৈরি ও উন্নত করার প্রতি আমার আগ্রহ রয়েছে।</p>
+    <p>Excel দিয়ে warehouse stock tracking, salary calculation, attendance, sales report, student fee tracking এবং MIS-এর মতো practical কাজের নমুনা তৈরি করি।</p>
+    <p>AI tools ব্যবহার করে coding knowledge ছাড়াই website-এর পরিকল্পনা, HTML, CSS ও JavaScript code generation, preview, error checking এবং refinement করতে পারি। E-commerce, portfolio, business এবং management website-এর মতো project নিয়ে কাজ করি।</p>
+    <p>আমার লক্ষ্য হলো technology ও AI-কে কাজে লাগিয়ে নিজের দক্ষতা আরও উন্নত করা এবং অন্যদেরও practical digital skills শেখাতে পারা।</p>
+   </div>
+   <div class="about-panel"><h3>Working Areas</h3><ul><li>Advanced Microsoft Excel & reporting</li><li>Data entry, cleaning & record management</li><li>Warehouse, inventory & MIS workflows</li><li>PDF editing and document productivity</li><li>Internet, browser & online tools</li><li>AI tools for research and productivity</li><li>AI-assisted website creation</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="skills" id="skills">
+ <div class="wrap">
+  <div class="section-head"><div><div class="section-index">02 / SKILLS</div><h2 class="section-title">Tools, Skills & Knowledge</h2></div><p class="section-intro bn">প্রতিটি skill-এর ক্ষেত্রে AI-কে সহায়ক tool হিসেবে ব্যবহার করি; কাজের ফলাফল নিজে review ও refine করি।</p></div>
+  <div class="skill-grid">
+   <article class="skill"><div class="num">01 — SPREADSHEETS</div><h3>Advanced Excel</h3><p class="bn">Formulas, lookup, conditional calculations, data cleaning, MIS reports এবং dashboard।</p></article>
+   <article class="skill"><div class="num">02 — OFFICE</div><h3>Office Applications</h3><p class="bn">Word documents, presentations, spreadsheets, PDF handling এবং file management।</p></article>
+   <article class="skill"><div class="num">03 — AI WORKFLOW</div><h3>AI Tools & Prompting</h3><p class="bn">Prompt লেখা, research, content generation, planning এবং AI output যাচাই ও উন্নত করা।</p></article>
+   <article class="skill"><div class="num">04 — WEB</div><h3>AI-assisted Web Creation</h3><p class="bn">AI দিয়ে HTML, CSS ও JavaScript ব্যবহার করে website তৈরি, preview, test ও refine করা।</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="capabilities" id="capabilities">
+ <div class="wrap">
+  <div class="section-head"><div><div class="section-index">03 / PRACTICAL CAPABILITIES</div><h2 class="section-title">What I Can Do & Share</h2></div><p class="section-intro bn">শুধু tool-এর নাম নয়—কী ধরনের কাজ করা যায় এবং learner কী শিখতে পারে, সেটাই এখানে তুলে ধরা হয়েছে।</p></div>
+  <div class="cap-grid">
+   <article class="cap"><div class="cap-no">EX</div><div><h3>Excel, MIS & Data Reporting</h3><p class="bn">Formula, sorting, filtering, lookup, data cleaning, inventory, attendance, payroll এবং dashboard তৈরি।</p><strong>LEARNER OUTCOME · বাস্তব office ও warehouse data নিয়ে কাজের ভিত্তি।</strong></div></article>
+   <article class="cap"><div class="cap-no">AI</div><div><h3>AI Tools & Prompt Skills</h3><p class="bn">বিভিন্ন AI tool-এর ব্যবহার, ভালো prompt লেখা, research, content এবং productivity workflow।</p><strong>LEARNER OUTCOME · দৈনন্দিন কাজে AI-কে কার্যকর সহকারী হিসেবে ব্যবহার।</strong></div></article>
+   <article class="cap"><div class="cap-no">WB</div><div><h3>Website Creation Without Coding Knowledge</h3><p class="bn">আগে coding জানা না থাকলেও AI-কে নির্দেশ দিয়ে HTML, CSS ও JavaScript code তৈরি, preview, error fix ও উন্নত করা।</p><strong>LEARNER OUTCOME · AI-এর সাহায্যে নিজের website project তৈরি করার ধারণা।</strong></div></article>
+   <article class="cap"><div class="cap-no">EC</div><div><h3>Different Types of Websites</h3><p class="bn">E-commerce store, portfolio, business website, landing page, dashboard এবং management system-এর মতো website project।</p><strong>LEARNER OUTCOME · প্রয়োজন অনুযায়ী website-এর structure ও workflow বোঝা।</strong></div></article>
+   <article class="cap"><div class="cap-no">PDF</div><div><h3>PDF & Document Productivity</h3><p class="bn">PDF merge, split, convert, compress, page arrange, document editing এবং file organisation-এর workflow।</p><strong>LEARNER OUTCOME · document-related digital কাজ আরও সহজে করা।</strong></div></article>
+   <article class="cap"><div class="cap-no">NET</div><div><h3>Internet & Digital Literacy</h3><p class="bn">Browser, search, online forms, cloud files, safe browsing, email এবং online services-এর ব্যবহার।</p><strong>LEARNER OUTCOME · আত্মবিশ্বাসের সঙ্গে internet ও online tools ব্যবহার।</strong></div></article>
+   <article class="cap"><div class="cap-no">GD</div><div><h3>AI-assisted Graphic Design</h3><p class="bn">AI দিয়ে design idea, poster, banner, social post এবং visual content তৈরি ও refine করা।</p><strong>WORKFLOW · Prompt → Generate → Review → Refine.</strong></div></article>
+   <article class="cap"><div class="cap-no">VD</div><div><h3>AI-assisted Video Creation</h3><p class="bn">AI দিয়ে script idea, scene planning, visuals, captions এবং video content workflow তৈরি।</p><strong>WORKFLOW · Plan → Generate → Assemble → Review.</strong></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="excel-section" id="excel">
+ <div class="wrap">
+  <div class="section-head"><div><div class="section-index">04 / INTERACTIVE EXCEL SHOWCASE</div><h2 class="section-title">Excel Dashboards & Reports</h2></div><p class="section-intro bn">নিচের প্রতিটি tab-এ click করলে শুধু সেই project-এর dashboard ও sample data দেখা যাবে। এগুলো portfolio demonstration-এর জন্য তৈরি sample data।</p></div>
+  <div class="excel-shell">
+   <div class="excel-top"><strong>SPREADSHEET PROJECT LAB</strong><span>INTERACTIVE SAMPLE DASHBOARDS</span></div>
+   <div class="excel-tabs" id="excelTabs">
+    <button class="excel-tab active" data-tab="warehouse">Warehouse MIS</button><button class="excel-tab" data-tab="salary">Salary Sheet</button><button class="excel-tab" data-tab="sales">Sales Dashboard</button><button class="excel-tab" data-tab="fees">Student Fees</button><button class="excel-tab" data-tab="inventory">Inventory</button><button class="excel-tab" data-tab="attendance">Attendance</button><button class="excel-tab" data-tab="cleaning">Data Cleaning</button><button class="excel-tab" data-tab="dynamic">Dynamic MIS</button>
+   </div>
+   <div id="dashboardContent">
+    <div class="dash active" id="warehouse">
+     <div class="dash-head"><div><h3>Warehouse Inward / Outward MIS</h3><p class="bn">পণ্য গ্রহণ, dispatch এবং closing stock-এর sample report</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>TOTAL SKU</small><b>04</b><em>Active items</em></div><div class="metric"><small>INWARD QTY</small><b>520</b><em>Units received</em></div><div class="metric"><small>OUTWARD QTY</small><b>275</b><em>Units dispatched</em></div><div class="metric"><small>CLOSING STOCK</small><b>245</b><em>Calculated balance</em></div></div>
+     <table class="data-table"><thead><tr><th>Product</th><th>Opening</th><th>Inward</th><th>Outward</th><th>Closing</th><th>Status</th></tr></thead><tbody><tr><td>A4 Paper</td><td>40</td><td>100</td><td>45</td><td>95</td><td class="status">Healthy</td></tr><tr><td>Ball Pen</td><td>100</td><td>80</td><td>40</td><td>140</td><td class="status">Healthy</td></tr><tr><td>Barcode Labels</td><td>20</td><td>30</td><td>35</td><td>15</td><td class="status warn">Reorder</td></tr><tr><td>Carton Box</td><td>60</td><td>90</td><td>20</td><td>130</td><td class="status">Healthy</td></tr></tbody></table>
+     <div class="dash-foot">Calculation concept: Closing Stock = Opening Stock + Inward − Outward. Reorder alert is based on a sample minimum-stock level.</div>
+    </div>
+    <div class="dash" id="salary">
+     <div class="dash-head"><div><h3>Employee Salary & Payroll</h3><p class="bn">Gross salary, PF deduction এবং net payable-এর নমুনা</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>EMPLOYEES</small><b>04</b><em>Sample records</em></div><div class="metric"><small>GROSS PAY</small><b>₹82,000</b><em>Monthly total</em></div><div class="metric"><small>PF DEDUCTION</small><b>₹4,800</b><em>Illustrative</em></div><div class="metric"><small>NET PAYABLE</small><b>₹77,200</b><em>After PF</em></div></div>
+     <table class="data-table"><thead><tr><th>Employee</th><th>Basic</th><th>Allowance</th><th>Gross</th><th>PF</th><th>Net Pay</th></tr></thead><tbody><tr><td>Employee 01</td><td>₹18,000</td><td>₹2,000</td><td>₹20,000</td><td>₹1,200</td><td>₹18,800</td></tr><tr><td>Employee 02</td><td>₹20,000</td><td>₹2,000</td><td>₹22,000</td><td>₹1,200</td><td>₹20,800</td></tr><tr><td>Employee 03</td><td>₹16,000</td><td>₹2,000</td><td>₹18,000</td><td>₹1,200</td><td>₹16,800</td></tr><tr><td>Employee 04</td><td>₹20,000</td><td>₹2,000</td><td>₹22,000</td><td>₹1,200</td><td>₹20,800</td></tr></tbody></table>
+     <div class="dash-foot">Illustrative PF values for demonstrating spreadsheet calculations only; actual payroll deductions depend on applicable rules and salary structure.</div>
+    </div>
+    <div class="dash" id="sales">
+     <div class="dash-head"><div><h3>Monthly Sales Performance</h3><p class="bn">Target বনাম achievement এবং sales representative summary</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>MONTHLY TARGET</small><b>₹5.0L</b><em>Planned</em></div><div class="metric"><small>ACTUAL SALES</small><b>₹4.2L</b><em>Achieved</em></div><div class="metric"><small>ACHIEVEMENT</small><b>84%</b><em>Target ratio</em></div><div class="metric"><small>GAP TO TARGET</small><b>₹80K</b><em>Remaining</em></div></div>
+     <table class="data-table"><thead><tr><th>Sales Area</th><th>Target</th><th>Actual</th><th>Achievement</th><th>Result</th></tr></thead><tbody><tr><td>North</td><td>₹1,50,000</td><td>₹1,35,000</td><td>90%</td><td class="status">On track</td></tr><tr><td>South</td><td>₹1,25,000</td><td>₹1,00,000</td><td>80%</td><td class="status warn">Below target</td></tr><tr><td>East</td><td>₹1,25,000</td><td>₹1,15,000</td><td>92%</td><td class="status">On track</td></tr><tr><td>West</td><td>₹1,00,000</td><td>₹70,000</td><td>70%</td><td class="status warn">Below target</td></tr></tbody></table>
+     <div class="dash-foot">Achievement = Actual Sales ÷ Target × 100. Values are sample figures for demonstration.</div>
+    </div>
+    <div class="dash" id="fees">
+     <div class="dash-head"><div><h3>Student Fee Collection</h3><p class="bn">Student fee, paid amount এবং due tracking</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>STUDENTS</small><b>48</b><em>Sample register</em></div><div class="metric"><small>TOTAL FEE</small><b>₹48K</b><em>Expected</em></div><div class="metric"><small>COLLECTED</small><b>₹39K</b><em>Received</em></div><div class="metric"><small>OUTSTANDING</small><b>₹9K</b><em>Pending</em></div></div>
+     <table class="data-table"><thead><tr><th>Student ID</th><th>Class</th><th>Fee</th><th>Paid</th><th>Due</th><th>Status</th></tr></thead><tbody><tr><td>ST-001</td><td>VIII</td><td>₹1,000</td><td>₹1,000</td><td>₹0</td><td class="status">Paid</td></tr><tr><td>ST-002</td><td>IX</td><td>₹1,000</td><td>₹500</td><td>₹500</td><td class="status warn">Partial</td></tr><tr><td>ST-003</td><td>VI</td><td>₹800</td><td>₹0</td><td>₹800</td><td class="status warn">Due</td></tr><tr><td>ST-004</td><td>X</td><td>₹1,200</td><td>₹1,200</td><td>₹0</td><td class="status">Paid</td></tr></tbody></table>
+     <div class="dash-foot">Due = Total Fee − Paid Amount. Student identities and amounts are fictional sample records.</div>
+    </div>
+    <div class="dash" id="inventory">
+     <div class="dash-head"><div><h3>Inventory & Stock Valuation</h3><p class="bn">Available quantity, unit cost এবং stock value</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>ITEMS</small><b>04</b><em>SKU count</em></div><div class="metric"><small>TOTAL UNITS</small><b>380</b><em>On hand</em></div><div class="metric"><small>STOCK VALUE</small><b>₹31.5K</b><em>Illustrative</em></div><div class="metric"><small>LOW STOCK</small><b>01</b><em>Needs review</em></div></div>
+     <table class="data-table"><thead><tr><th>SKU</th><th>Item</th><th>Qty</th><th>Unit Cost</th><th>Stock Value</th><th>Alert</th></tr></thead><tbody><tr><td>SKU-101</td><td>Notebook</td><td>120</td><td>₹35</td><td>₹4,200</td><td class="status">OK</td></tr><tr><td>SKU-102</td><td>Pen Pack</td><td>180</td><td>₹25</td><td>₹4,500</td><td class="status">OK</td></tr><tr><td>SKU-103</td><td>Printer Ink</td><td>10</td><td>₹850</td><td>₹8,500</td><td class="status warn">Low</td></tr><tr><td>SKU-104</td><td>Paper Ream</td><td>70</td><td>₹205</td><td>₹14,350</td><td class="status">OK</td></tr></tbody></table>
+     <div class="dash-foot">Stock Value = Available Quantity × Unit Cost. Low-stock alert compares quantity against a reorder level.</div>
+    </div>
+    <div class="dash" id="attendance">
+     <div class="dash-head"><div><h3>Attendance Summary</h3><p class="bn">Present, absent এবং attendance percentage</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>EMPLOYEES</small><b>32</b><em>Sample team</em></div><div class="metric"><small>WORKING DAYS</small><b>26</b><em>Period</em></div><div class="metric"><small>AVG. ATTENDANCE</small><b>93%</b><em>Team average</em></div><div class="metric"><small>ABSENCE DAYS</small><b>58</b><em>Combined</em></div></div>
+     <table class="data-table"><thead><tr><th>Employee</th><th>Working Days</th><th>Present</th><th>Absent</th><th>Attendance</th></tr></thead><tbody><tr><td>Employee 01</td><td>26</td><td>25</td><td>1</td><td class="status">96.2%</td></tr><tr><td>Employee 02</td><td>26</td><td>24</td><td>2</td><td class="status">92.3%</td></tr><tr><td>Employee 03</td><td>26</td><td>22</td><td>4</td><td class="status warn">84.6%</td></tr><tr><td>Employee 04</td><td>26</td><td>26</td><td>0</td><td class="status">100%</td></tr></tbody></table>
+     <div class="dash-foot">Attendance % = Present Days ÷ Working Days × 100. This is a sample report layout.</div>
+    </div>
+    <div class="dash" id="cleaning">
+     <div class="dash-head"><div><h3>Customer Data Cleaning</h3><p class="bn">Inconsistent text, extra spaces এবং duplicate record শনাক্ত করার উদাহরণ</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>RAW RECORDS</small><b>120</b><em>Imported rows</em></div><div class="metric"><small>SPACE ISSUES</small><b>18</b><em>TRIM candidates</em></div><div class="metric"><small>DUPLICATES</small><b>06</b><em>Review required</em></div><div class="metric"><small>CLEAN RECORDS</small><b>96</b><em>After review</em></div></div>
+     <table class="data-table"><thead><tr><th>Raw Customer</th><th>Cleaned Name</th><th>Issue</th><th>Excel Method</th></tr></thead><tbody><tr><td>  Rahim   Ali</td><td>Rahim Ali</td><td>Extra spaces</td><td>TRIM</td></tr><tr><td>SALES TEAM</td><td>Sales Team</td><td>Text case</td><td>PROPER</td></tr><tr><td>customer@email</td><td>customer@email</td><td>Format check</td><td>Validation</td></tr><tr><td>Rahim Ali (repeat)</td><td>Review duplicate</td><td>Duplicate</td><td>Remove Duplicates</td></tr></tbody></table>
+     <div class="dash-foot">Cleaning steps are illustrative. Always review duplicates before removing records from a real customer database.</div>
+    </div>
+    <div class="dash" id="dynamic">
+     <div class="dash-head"><div><h3>Monthly Dynamic MIS</h3><p class="bn">Monthly inward/outward movement ও cumulative stock summary</p></div><span class="demo-tag">SAMPLE DATA</span></div>
+     <div class="metric-grid"><div class="metric"><small>MONTHS</small><b>04</b><em>Reporting period</em></div><div class="metric"><small>TOTAL INWARD</small><b>1,420</b><em>Units</em></div><div class="metric"><small>TOTAL OUTWARD</small><b>1,060</b><em>Units</em></div><div class="metric"><small>NET MOVEMENT</small><b>+360</b><em>Units</em></div></div>
+     <table class="data-table"><thead><tr><th>Month</th><th>Inward</th><th>Outward</th><th>Net Movement</th><th>Cumulative</th></tr></thead><tbody><tr><td>July</td><td>300</td><td>220</td><td>+80</td><td>80</td></tr><tr><td>August</td><td>360</td><td>250</td><td>+110</td><td>190</td></tr><tr><td>September</td><td>340</td><td>280</td><td>+60</td><td>250</td></tr><tr><td>October</td><td>420</td><td>310</td><td>+110</td><td>360</td></tr></tbody></table>
+     <div class="bar-area"><div class="bar-card"><h4>INWARD VOLUME</h4><div class="bar-row"><span>July</span><div class="bar"><i style="width:71%"></i></div><b>300</b></div><div class="bar-row"><span>August</span><div class="bar"><i style="width:86%"></i></div><b>360</b></div><div class="bar-row"><span>September</span><div class="bar"><i style="width:81%"></i></div><b>340</b></div><div class="bar-row"><span>October</span><div class="bar"><i style="width:100%"></i></div><b>420</b></div></div><div class="bar-card"><h4>OUTWARD VOLUME</h4><div class="bar-row"><span>July</span><div class="bar"><i style="width:71%"></i></div><b>220</b></div><div class="bar-row"><span>August</span><div class="bar"><i style="width:81%"></i></div><b>250</b></div><div class="bar-row"><span>September</span><div class="bar"><i style="width:90%"></i></div><b>280</b></div><div class="bar-row"><span>October</span><div class="bar"><i style="width:100%"></i></div><b>310</b></div></div></div>
+     <div class="dash-foot">Dynamic report concept: monthly totals, net movement and running cumulative balance. Data shown is fictional sample data.</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="web-projects" id="projects">
+ <div class="wrap">
+  <div class="section-head"><div><div class="section-index">05 / SELECTED PROJECTS</div><h2 class="section-title">Web & Digital Projects</h2></div><p class="section-intro bn">একই portfolio-র মধ্যে project-গুলো category অনুযায়ী সাজানো হয়েছে। View করলে project-এর overview ও module দেখা যাবে।</p></div>
+  <div class="project-grid">
+   <article class="project"><div class="project-visual"><span class="visual-top">PRODUCTIVITY · WEB APP</span><span class="visual-title">WORKSPACE</span></div><div class="project-body"><div class="project-meta">DOCUMENT PRODUCTIVITY</div><h3>All-in-One Workspace</h3><p class="bn">PDF ও document-related কাজের জন্য এক জায়গায় বিভিন্ন productivity tool-এর ধারণা।</p><button onclick="openProject('workspace')">VIEW PROJECT ↗</button></div></article>
+   <article class="project"><div class="project-visual"><span class="visual-top">HR · ADMINISTRATION</span><span class="visual-title">WORKFORCE 360</span></div><div class="project-body"><div class="project-meta">HR & PAYROLL SYSTEM</div><h3>Workforce 360 – HR & Payroll</h3><p class="bn">Employee record, attendance, payroll এবং HR workflow management project।</p><button onclick="openProject('workforce')">VIEW PROJECT ↗</button></div></article>
+   <article class="project"><div class="project-visual"><span class="visual-top">EDUCATION · MANAGEMENT</span><span class="visual-title">TUITION ERP</span></div><div class="project-body"><div class="project-meta">EDUCATION MANAGEMENT</div><h3>Tuition Management System</h3><p class="bn">Student information, fee collection এবং tuition centre management-এর project।</p><button onclick="openProject('tuition')">VIEW PROJECT ↗</button></div></article>
+   <article class="project"><div class="project-visual"><span class="visual-top">ONLINE STORE · COMMERCE</span><span class="visual-title">E-COMMERCE</span></div><div class="project-body"><div class="project-meta">AI-ASSISTED WEBSITE CONCEPT</div><h3>E-commerce Website</h3><p class="bn">Product catalogue, category, cart, wishlist, customer account এবং order flow-এর website concept।</p><button onclick="openProject('ecommerce')">VIEW CONCEPT ↗</button></div></article>
+   <article class="project"><div class="project-visual"><span class="visual-top">PERSONAL BRAND · WEB</span><span class="visual-title">PORTFOLIO</span></div><div class="project-body"><div class="project-meta">AI-ASSISTED WEBSITE CONCEPT</div><h3>Professional Portfolio Website</h3><p class="bn">Personal profile, skills, project showcase, responsive layout এবং contact section।</p><button onclick="openProject('portfolio')">VIEW CONCEPT ↗</button></div></article>
+   <article class="project"><div class="project-visual"><span class="visual-top">BUSINESS · OPERATIONS</span><span class="visual-title">BUSINESS WEB</span></div><div class="project-body"><div class="project-meta">AI-ASSISTED WEBSITE CONCEPT</div><h3>Business & Service Website</h3><p class="bn">Service details, business information, enquiry flow এবং responsive business pages।</p><button onclick="openProject('business')">VIEW CONCEPT ↗</button></div></article>
+  </div>
+  <div class="ai-note"><div><h3>How I build websites with AI</h3><p class="bn">প্রথমে website-এর উদ্দেশ্য ও feature ঠিক করি। এরপর AI tool-কে clear instruction দিয়ে HTML, CSS ও JavaScript code তৈরি করাই। তারপর browser preview, error checking, testing এবং repeated improvement করি।</p></div><div><h3>My approach</h3><p class="bn">আগে থেকে professional coding knowledge না থাকলেও AI-এর সাহায্যে website তৈরির process অনুসরণ করতে পারি। তবে final output ঠিক আছে কি না, তা preview ও test করে যাচাই করা জরুরি।</p></div></div>
+ </div>
+</section>
+
+<section class="address">
+ <div class="wrap">
+  <div class="section-head"><div><div class="section-index">06 / LOCATION</div><h2 class="section-title">Address</h2></div><p class="section-intro bn">যোগাযোগ ও professional correspondence-এর জন্য ঠিকানা।</p></div>
+  <div class="address-card"><div><h3>Sk Shayeemuddin</h3><p>Akdanga, Dankuni, Hooghly<br>West Bengal, India — PIN 712310</p></div><div class="address-pin">712310</div></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap contact-grid">
+  <div><div class="section-index">07 / CONTACT</div><h2>Have a project<br>or opportunity in mind?</h2><div class="contact-copy bn">আপনার training programme, project collaboration অথবা professional opportunity নিয়ে কথা বলতে চাইলে সরাসরি যোগাযোগ করতে পারেন। আমি আপনার message-এর অপেক্ষায় থাকব।</div><div class="contact-small">DANKUNI, HOOGHLY, WEST BENGAL · INDIA</div></div>
+  <div class="contact-actions">
+   <a class="contact-link" href="https://wa.me/917003735250?text=Hello%20Sk%20Shayeemuddin%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" aria-label="WhatsApp"><path fill="#25D366" d="M16.02 3A12.9 12.9 0 0 0 4.9 22.45L3.2 29l6.72-1.66A12.94 12.94 0 1 0 16.02 3Zm0 23.55c-1.96 0-3.88-.52-5.56-1.5l-.4-.24-3.99.99 1.06-3.88-.26-.4a10.6 10.6 0 1 1 9.15 5.03Zm5.82-7.94c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.59-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.54-.73-.55l-.62-.01c-.21 0-.56.08-.86.4-.3.32-1.12 1.1-1.12 2.69 0 1.59 1.15 3.12 1.31 3.34.16.21 2.27 3.47 5.5 4.86.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37Z"/></svg>
+    <span><strong>WhatsApp</strong><small>Send a direct message</small></span>
+   </a>
+   <a class="contact-link" href="sms:+917003735250">
+    <svg viewBox="0 0 24 24" aria-label="SMS"><path fill="#d8e6f4" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-9l-5.5 3V18H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2.5 5a1 1 0 1 0 0 2h11a1 1 0 1 0 0-2h-11Zm0 4a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2h-7Z"/></svg>
+    <span><strong>SMS</strong><small>Send a text message</small></span>
+   </a>
+   <a class="contact-link" href="tel:+917003735250">
+    <svg viewBox="0 0 24 24" aria-label="Phone"><path fill="#d8e6f4" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+    <span><strong>Call</strong><small>Speak directly</small></span>
+   </a>
+   <a class="contact-link" href="mailto:uskshayeem@gmail.com?subject=Portfolio%20Enquiry&body=Hello%20Sk%20Shayeemuddin%2C%0A">
+    <svg viewBox="0 0 24 24" aria-label="Email"><path fill="#d8e6f4" d="M20 4H4a2 2 0 0 0-2 2v.4l10 6.25L22 6.4V6a2 2 0 0 0-2-2ZM2 8.75V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.75l-9.47 5.92a1 1 0 0 1-1.06 0L2 8.75Z"/></svg>
+    <span><strong>Email</strong><small>Write an email</small></span>
+   </a>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Sk Shayeemuddin. All rights reserved.</span><span>Excel · Digital Productivity · AI-assisted Web Creation</span></div></footer>
+
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-box"><div class="modal-head"><h3 id="modalTitle">Project overview</h3><button class="modal-close" id="closeModal" aria-label="Close">×</button></div><div class="modal-content" id="modalContent"></div></div>
+</div>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>{nav.classList.toggle('open');menu.textContent=nav.classList.contains('open')?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.querySelectorAll('.excel-tab').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.excel-tab').forEach(b=>b.classList.remove('active'));
+ document.querySelectorAll('.dash').forEach(d=>d.classList.remove('active'));
+ btn.classList.add('active');
+ document.getElementById(btn.dataset.tab).classList.add('active');
+}));
+
+const projectInfo={
+ workspace:{title:'All-in-One Workspace',type:'Productivity & document web application',desc:'একটি browser-based workspace-এর concept, যেখানে প্রয়োজনীয় document ও PDF productivity কাজগুলো এক জায়গায় সাজানো থাকে।',items:['PDF merge, split ও compress workflow','Document conversion tools','File organisation interface','Responsive tool dashboard']},
+ workforce:{title:'Workforce 360 – HR & Payroll',type:'Human resources and payroll management',desc:'Employee information, attendance এবং salary-related workflow পরিচালনার জন্য তৈরি HR management project।',items:['Employee profile and records','Attendance overview','Salary and payroll workflow','Administrative dashboard']},
+ tuition:{title:'Tuition Management System',type:'Education administration web application',desc:'Tuition centre-এর student records, fee tracking এবং daily administration-এর কাজ গুছিয়ে রাখার project।',items:['Student registration and records','Class and batch management','Fee collection and due tracking','Admin and teacher workflow']},
+ ecommerce:{title:'E-commerce Website',type:'AI-assisted website concept',desc:'একটি online store-এর structure ও customer journey পরিকল্পনা করে AI-এর সাহায্যে website তৈরি করার workflow।',items:['Product catalogue and categories','Product details, cart and wishlist','Customer account and order journey','Admin-side product and order management']},
+ portfolio:{title:'Professional Portfolio Website',type:'AI-assisted website concept',desc:'ব্যক্তিগত skill, project, experience এবং contact information সুন্দরভাবে উপস্থাপনের responsive portfolio website।',items:['Profile and skill presentation','Project showcase','Responsive mobile layout','Contact and enquiry section']},
+ business:{title:'Business & Service Website',type:'AI-assisted website concept',desc:'ছোট business বা service provider-এর জন্য information, service details এবং enquiry-focused website।',items:['Business overview and services','Service detail sections','Enquiry and contact flow','Mobile-friendly layout']}
+};
+const modal=document.getElementById('projectModal');
+function openProject(key){
+ const p=projectInfo[key];if(!p)return;
+ document.getElementById('modalTitle').textContent=p.title;
+ document.getElementById('modalContent').innerHTML='<div class="kicker">'+p.type+'</div><p>'+p.desc+'</p><div class="module-grid">'+p.items.map(x=>'<div class="module">'+x+'</div>').join('')+'</div><div class="modal-note">Portfolio overview only. This panel describes the project scope; it does not claim that every listed module is connected to a live production service.</div>';
+ modal.classList.add('open');document.body.style.overflow='hidden';
+}
+function closeProject(){modal.classList.remove('open');document.body.style.overflow=''}
+document.getElementById('closeModal').addEventListener('click',closeProject);
+modal.addEventListener('click',e=>{if(e.target===modal)closeProject()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProject()});
+</script>
+</body>
+</html>
